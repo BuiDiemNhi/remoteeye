@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:background="@color/menu_location_1"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/padding_m" >
+
+        <TextView
+            android:id="@+id/tv_city_location"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/padding_l"
+            android:gravity="center_vertical"
+            android:text="@string/my_city"
+            android:textSize="@dimen/text_title_xl"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:background="@color/menu_location_2"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/padding_m" >
+
+        <TextView
+            android:id="@+id/tv_country_location"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/padding_l"
+            android:gravity="center_vertical"
+            android:text="@string/my_country"
+            android:textSize="@dimen/text_title_xl"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

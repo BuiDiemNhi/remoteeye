@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_dialog_message"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/dialog_background"
+    android:orientation="vertical" >
+    
+    <TextView
+        android:id="@+id/title_message_dialog"
+        style="@style/title_dialog_style"        
+        android:text="Ignore Challenge"
+        android:layout_weight="1"
+        />
+    
+    <TextView 
+        android:id="@+id/content_message_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat."
+        android:layout_below="@id/title_message_dialog"
+        android:layout_weight="1"
+        />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/content_message_dialog"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:paddingBottom="10dp"
+        >
+        <LinearLayout 
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            >
+            <Button
+                android:id="@+id/btn_no"
+	            android:layout_width="wrap_content"
+	            android:layout_height="match_parent"
+	            android:background="@drawable/cancel_button"
+	            />
+        </LinearLayout>        
+        <LinearLayout 
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            >
+            <Button
+                android:id="@+id/btn_yes"
+	            android:layout_width="wrap_content"
+	            android:layout_height="match_parent"
+	            android:background="@drawable/ok_button"
+	            />
+        </LinearLayout>
+        
+    </LinearLayout>
+
+</LinearLayout>

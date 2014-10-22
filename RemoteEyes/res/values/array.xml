@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string-array 
+        name="starting_on_array">
+        <item>Today</item>
+        <item>Tomorrow</item>
+    </string-array>
+    
+    <string-array 
+        name="hours">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+    
+    <string-array 
+        name="minutes">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+    
+    <string-array 
+        name="days">
+        <item>00</item>
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+        <item>04</item>
+        <item>05</item>
+        <item>06</item>
+        <item>07</item>
+        <item>08</item>
+        <item>09</item>
+        <item>10</item>
+    </string-array>
+    
+    <string-array 
+        name="category">
+        <item>Phenomenon</item>
+        <item>Breaking news</item>
+        <item>Photo/video Contest</item>
+        <item>Famous people</item>
+        <item>Famous places</item>
+        <item>Nature</item>
+        <item>Travel</item>
+    </string-array>
+</resources>

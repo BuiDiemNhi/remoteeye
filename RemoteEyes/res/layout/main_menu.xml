@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/menu_location_1"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/iv_mapArea"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/padding_m"
+            android:background="@drawable/ic_map_white"
+            android:gravity="center_vertical" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/padding_s"
+            android:text="@string/my_area"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_title_xxl"
+            android:textStyle="bold" />
+        
+        <ImageView
+            android:id="@+id/iv_refesh"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/padding_m"
+            android:background="@drawable/ic_refresh"
+            android:gravity="center_vertical" />
+        
+        <ImageView
+            android:id="@+id/iv_show_list"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/padding_m"
+            android:background="@drawable/ic_list_arrow"
+            android:gravity="center_vertical" />
+        
+    </LinearLayout>
+
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/menu_blue"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/padding_m" >
+
+            <RadioButton
+                android:id="@+id/rb_challenges_nearby"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="@dimen/padding_s"
+                android:checked="true"
+                android:drawablePadding="@dimen/padding_s"
+                android:gravity="center_vertical" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/padding_l"
+                android:gravity="center_vertical"
+                android:text="@string/challenges_nearby_2"
+                android:textSize="@dimen/text_title_xl" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/iv_icon_nearby"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/padding_xl"
+                    android:background="@drawable/ic_map"
+                    android:gravity="center_vertical" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/menu_orange"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/padding_m" >
+
+            <RadioButton
+                android:id="@+id/rb_my_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="@dimen/padding_s"
+                android:drawablePadding="@dimen/padding_s"
+                android:gravity="center_vertical" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/padding_l"
+                android:gravity="center_vertical"
+                android:text="@string/my_city"
+                android:textSize="@dimen/text_title_xl" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/iv_icon_my_city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/padding_xl"
+                    android:background="@drawable/ic_list"
+                    android:gravity="center_vertical" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/menu_gray"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/padding_m" >
+
+            <RadioButton
+                android:id="@+id/rb_my_country"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="@dimen/padding_s"
+                android:drawablePadding="@dimen/padding_s"
+                android:gravity="center_vertical" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/padding_l"
+                android:gravity="center_vertical"
+                android:text="@string/my_country"
+                android:textSize="@dimen/text_title_xl" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/iv_icon_my_country"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/padding_xl"
+                    android:background="@drawable/ic_list"
+                    android:gravity="center_vertical" />
+            </LinearLayout>
+        </LinearLayout>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/menu_orange"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/padding_xl"
+        android:text="@string/options"
+        android:textSize="@dimen/text_title_l"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/menu_location_2"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/padding_xxxl" >
+
+        <CheckBox
+            android:id="@+id/cb_show_today"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/padding_s"
+            android:button="@drawable/custom_checkbox_design"
+            android:drawablePadding="@dimen/padding_s"
+            android:gravity="center_vertical" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/padding_l"
+            android:gravity="center_vertical"
+            android:text="@string/show_today"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_title_l"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/menu_location_3"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/padding_xxxl" >
+
+        <CheckBox
+            android:id="@+id/cb_show_mine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/padding_s"
+            android:button="@drawable/custom_checkbox_design"
+            android:drawablePadding="@dimen/padding_s"
+            android:gravity="center_vertical" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/padding_l"
+            android:gravity="center_vertical"
+            android:text="@string/show_mine"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_title_l"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/menu_location_4"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/padding_xxxl" >
+
+        <CheckBox
+            android:id="@+id/cb_show_ignored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/padding_s"
+            android:button="@drawable/custom_checkbox_design"
+            android:drawablePadding="@dimen/padding_s"
+            android:gravity="center_vertical" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/padding_l"
+            android:gravity="center_vertical"
+            android:text="@string/show_ignored"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_title_l"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/menu_location_5"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/padding_xxxl" >
+
+        <CheckBox
+            android:id="@+id/cb_show_history"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/padding_s"
+            android:button="@drawable/custom_checkbox_design"
+            android:drawablePadding="@dimen/padding_s"
+            android:gravity="center_vertical" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/padding_l"
+            android:gravity="center_vertical"
+            android:text="@string/show_history"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_title_l"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/text_title_xl"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/menu_violet"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/padding_xl"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/tv_my_area_history"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/my_area_history"
+            android:textSize="@dimen/text_title_xl"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/iv_icon_history"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/padding_xl"
+                android:background="@drawable/ic_map"
+                android:gravity="center_vertical" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/menu_location_6"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/padding_xl" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/iv_icon_global"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/ic_list_white" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_global_challenges"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/padding_xl"
+            android:gravity="center_vertical"
+            android:text="@string/global_challenges"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_title_xl"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/menu_location_7"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/padding_xl" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/iv_icon_posted"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/ic_list_white" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_my_posted"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/padding_xl"
+            android:gravity="center_vertical"
+            android:text="@string/my_posted_challenges"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_title_xl"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/menu_location_8"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/padding_xl" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/iv_icon_accepted"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/ic_list_white" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_my_accepted"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/padding_xl"
+            android:gravity="center_vertical"
+            android:text="@string/my_accepted_challenges"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_title_xl"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/text_title_xl"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_my_groups"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/menu_location_8"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/padding_xl"
+        android:text="@string/my_groups"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_title_xl"
+        android:textStyle="bold"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tv_tell_a_friend"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/menu_location_9"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/padding_xl"
+        android:text="@string/tell_a_friend"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_title_xl"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_my_account"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/menu_location_10"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/padding_xl"
+        android:text="@string/my_account"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_title_xl"
+        android:textStyle="bold" />
+
+</LinearLayout>

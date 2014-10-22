@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <!--  <LinearLayout
+        android:id="@+id/ll_above_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/iv_author_avatar_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/blue_eye" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/tv_name_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/padding_left_title"
+                    android:textSize="@dimen/text_title_xl"
+                    android:textStyle="bold|italic" />
+
+                <ImageView
+                    android:id="@+id/iv_share_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/share" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btn_run_camera_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@color/yellow_button"
+                    android:text="@string/run_camera"
+                    android:textSize="@dimen/text_title_l"
+                    android:textStyle="italic|bold"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/btn_not_available_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@color/gray_button"
+                    android:text="@string/camera_not_available_yet"
+                    android:textSize="@dimen/text_title_l"
+                    android:textStyle="italic|bold"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/btn_accept_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@color/green_button"
+                    android:textSize="@dimen/text_title_l"
+                    android:textStyle="italic|bold"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/btn_upload_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/green_button"
+                    android:text="@string/upload"
+                    android:textSize="@dimen/text_title_l"
+                    android:textStyle="italic|bold"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/btn_ignore_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/pink_button"
+                    android:text="@string/ignored"
+                    android:textSize="@dimen/text_title_l"
+                    android:textStyle="italic|bold"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/btn_undo_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/yellow_button"
+                    android:text="@string/undo"
+                    android:textSize="@dimen/text_title_l"
+                    android:textStyle="italic|bold"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/btn_accept_disable_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@color/gray_button"
+                    android:textSize="@dimen/text_title_l"
+                    android:textStyle="italic|bold"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/btn_withraw_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/pink_button"
+                    android:text="@string/withdaw"
+                    android:textSize="@dimen/text_title_l"
+                    android:textStyle="italic|bold"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_below_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/shadow"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/trap_border_1" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/trap_border_2"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp" >
+
+            <TextView
+                android:id="@+id/tv_reward_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/red"
+                android:textSize="@dimen/text_title_m" />
+
+            <TextView
+                android:id="@+id/tv_commas_1_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=", "
+                android:textSize="@dimen/text_title_m"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_distance_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_title_m"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_commas_2_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=", "
+                android:textSize="@dimen/text_title_m"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_global_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/global"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/text_title_m"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_commas_3_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=", "
+                android:textSize="@dimen/text_title_m"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_going_on_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ongoing"
+                android:textColor="@color/red"
+                android:textSize="@dimen/text_title_m"
+                android:textStyle="normal"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_commas_4_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=", "
+                android:textSize="@dimen/text_title_m"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_duration_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_title_m" />
+
+            <TextView
+                android:id="@+id/tv_count_photo_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_title_m" />
+
+            <ImageView
+                android:id="@+id/iv_detail_challenge_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/arrow_down" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/trap_border_3" />
+    </LinearLayout>-->
+
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_item_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/button_submit" >
+        <LinearLayout
+            android:id="@+id/ll_item_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/padding_m" >
+
+            <ImageButton
+                android:layout_width="@dimen/icon_profile_s"
+                android:layout_height="@dimen/icon_profile_s"
+                android:layout_marginRight="@dimen/padding_m"
+                android:background="@drawable/red_eye"
+                 />
+
+            <TextView
+                android:id="@+id/tv_the_drone_squad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The Drone Squad"
+                android:layout_gravity="center_vertical"
+                android:textSize="@dimen/text_title_m"
+                android:textStyle="italic|bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

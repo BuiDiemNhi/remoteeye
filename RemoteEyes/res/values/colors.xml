@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="dam">#037873</color>
+    <color name="nhat">#03c8c1</color>
+    <color name="darkgreen">#037873</color>
+    <color name="lightgreen">#03c8c1</color>
+    <color name="white">#ffffff</color>
+    <color name="pink_button">#f5e3e3</color>
+    <color name="yellow_button">#FFFA51</color>
+    <color name="green_button">#cadcf2</color>
+    <color name="blue">#0000ff</color>
+    <color name="btn_public">#03c8c1</color>
+    <color name="button_submit">#cadcf2</color>
+    <color name="button_cancel">#f5e3e3</color>
+    <color name="login_background">#dadada</color>
+    <color name="shawdow">#4d000000</color>
+    <color name="text_color_border_pink">#7794aa</color>
+    <color name="text_color_border_moss">#e0e321</color>
+    <color name="text_color_border_blue">#7d374f</color>
+    <color name="transparent">#00000000</color>
+    <color name="text_hint">#858585</color>
+    <color name="text_blue_link">#1500FF</color>
+    <color name="text_green">#34CB33</color>
+    <color name="menu_violet">#ccc0d9</color>
+    <color name="menu_blue">#daeef3</color>
+    <color name="menu_orange">#fde9d9</color>
+    <color name="menu_gray">#ddd9c3</color>
+    <color name="gray_button">#d9d9d9</color>
+    <color name="menu_location_1">#0183a5</color>
+    <color name="menu_location_2">#0786a7</color>
+    <color name="menu_location_3">#0e89aa</color>
+    <color name="menu_location_4">#158cac</color>
+    <color name="menu_location_5">#1c8fac</color>
+    <color name="menu_location_6">#2392ae</color>
+    <color name="menu_location_7">#2a96b2</color>
+    <color name="menu_location_8">#3297b3</color>
+    <color name="menu_location_9">#379bb5</color>
+    <color name="menu_location_10">#3f9fb8</color>
+    <color name="blue_title_my_area">#005aff</color>
+    <color name="pink">#FF0000</color>
+    <color name="purple">#aa09fd</color>
+    <color name="red">#ff0000</color>
+    <color name="gray_text">#8c8c8c</color>
+    <color name="black">#000000</color>
+    <color name="blue_button">#005aff</color>
+    <color name="green">#12c699</color>
+    <color name="menu_top">#225485</color>
+    <color name="menu_center">#4f749e</color>
+    <color name="menu_bot">#6f90b3</color>
+    <color name="content_grey">#F8F8F8</color>
+    <color name="item_history_green1">#DBE5F1</color>
+    <color name="item_history_green2">#C3D3E7</color>
+    <color name= "blue_my_account">#0e55ff</color>
+
+</resources>

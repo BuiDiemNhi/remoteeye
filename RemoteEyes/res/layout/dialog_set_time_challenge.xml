@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_edit_reward"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_background"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_please_select"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:text="@string/please_select"
+        android:textColor="@color/blue_title_my_area"
+        android:textSize="@dimen/text_title_xxl"
+        android:textStyle="bold|italic" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:gravity="left"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/iv_c"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginLeft="@dimen/padding_s"
+                android:layout_weight="1"
+                android:src="@drawable/ic_blue_calendar" />
+
+            <ImageView
+                android:id="@+id/iv_f"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginLeft="@dimen/padding_s"
+                android:layout_weight="1"
+                android:src="@drawable/ic_blue_flag" />
+
+            <ImageView
+                android:id="@+id/iv_r"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginLeft="@dimen/padding_s"
+                android:layout_weight="1"
+                android:src="@drawable/ic_pink_cup" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.77"
+            android:gravity="right"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="@string/starting_on"
+                android:textSize="@dimen/text_title_m"
+                android:textStyle="italic|bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="@string/time_duration_title"
+                android:textSize="@dimen/text_title_m"
+                android:textStyle="italic|bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="@string/time_reward_title"
+                android:textColor="@color/pink"
+                android:textStyle="italic|bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="left"
+            android:orientation="vertical"
+            android:paddingLeft="5dip" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_start_day"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/shawdow"
+                    android:text="Today"
+                    android:textStyle="italic|bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\u0020\u0020"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/tv_start_hour"
+                    android:layout_width="@dimen/padding_xxl"
+                    android:layout_height="wrap_content"
+                    android:background="@color/shawdow"
+                    android:text="18"
+                    android:textStyle="italic|bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" :  "
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/tv_start_minute"
+                    android:layout_width="@dimen/padding_xxl"
+                    android:layout_height="wrap_content"
+                    android:background="@color/shawdow"
+                    android:text="45"
+                    android:textStyle="italic|bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/et_time_day"
+                    android:layout_width="@dimen/padding_xxl"
+                    android:layout_height="wrap_content"
+                    android:background="@color/shawdow"
+                    android:hint="___"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:textStyle="italic|bold" >
+                </EditText>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="d  "
+                    android:textStyle="italic" />
+
+                <EditText
+                    android:id="@+id/et_time_hour"
+                    android:layout_width="@dimen/padding_xxl"
+                    android:layout_height="wrap_content"
+                    android:background="@color/shawdow"
+                    android:hint="___"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:textStyle="italic|bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="h  "
+                    android:textStyle="italic" />
+
+                <EditText
+                    android:id="@+id/et_time_minute"
+                   android:layout_width="@dimen/padding_xxl"
+                    android:layout_height="wrap_content"
+                    android:background="@color/shawdow"
+                    android:hint="___"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:textStyle="italic|bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="m"
+                    android:textStyle="italic" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="-2dp"
+                    android:text=" $ "
+                    android:textColor="@color/pink"
+                    android:textStyle="italic|bold" />
+
+                <EditText
+                    android:id="@+id/et_time_reward"
+                    android:layout_width="@dimen/padding_xxxl"
+                    android:layout_height="wrap_content"
+                    android:background="@color/shawdow"
+                    android:hint="_________"
+                    android:inputType="number"
+                    android:maxLength="9"
+                    android:textColor="@color/pink"
+                    android:textStyle="italic|bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/money_reward"
+        android:textSize="@dimen/text_title_m"
+        android:textStyle="italic|bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text=" $"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/tv_balance"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="50"
+            android:textStyle="italic" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text=" availible   "
+            android:textStyle="italic" />
+
+        <Button
+            android:id="@+id/btn_charge_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_charge" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/charge"
+            android:textStyle="italic|bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.2"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/btn_time_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cancel_button" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/btn_time_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ok_button" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,624 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/rl_author_avatar"
+            android:layout_width="@dimen/image_h"
+            android:layout_height="@dimen/image_h"
+            android:background="@drawable/no_avatar" >
+
+            <ImageView
+                android:id="@+id/iv_avatar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY" />
+
+            <ImageView
+                android:id="@+id/iv_edit_avatar"
+                android:layout_width="@dimen/icon_profile_l"
+                android:layout_height="@dimen/icon_profile_l"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/pen" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/new_account_title"
+                android:textColor="@color/blue_title_my_area"
+                android:textSize="@dimen/text_title_xxxl"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_register"
+                android:layout_width="@dimen/icon_profile_xxxl"
+                android:layout_height="@dimen/icon_profile_xxxl"
+                android:layout_alignParentRight="true"
+                android:layout_margin="@dimen/padding_profile"
+                android:background="@drawable/btn_register"
+                android:gravity="center" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/sv_body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/ll_body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_public_profile"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:background="@color/green_button"
+                android:text=" Public Profile "
+                android:textSize="@dimen/text_title_xll"
+                android:textStyle="italic" />
+
+            <LinearLayout
+                android:id="@+id/ll_public_profile"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_profile"
+                android:visibility="visible" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/padding_body"
+                    android:weightSum="12" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8.3"
+                        android:text="@string/my_account_text_name"
+                        android:textSize="@dimen/text_title_l"
+                        android:textStyle="bold|italic" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3.7"
+                        android:orientation="horizontal" >
+
+                        <EditText
+                            android:id="@+id/et_name"
+                            android:layout_width="@dimen/width_edittext"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:background="@drawable/border"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:singleLine="true" />
+
+                        <ImageButton
+                            android:id="@+id/ib_edit_name"
+                            android:layout_width="@dimen/icon_profile_m"
+                            android:layout_height="@dimen/icon_profile_m"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/pen" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/padding_body"
+                    android:weightSum="12" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8.3"
+                        android:text="@string/my_account_text_gender"
+                        android:textSize="@dimen/text_title_l"
+                        android:textStyle="bold|italic" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3.7"
+                        android:orientation="horizontal" >
+
+                        <RadioGroup
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <RadioButton
+                                android:id="@+id/rb_gender_female"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="true" />
+
+                            <TextView
+                                android:id="@+id/tv_gender_female"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:paddingLeft="@dimen/padding_profile"
+                                android:text="@string/new_account_female"
+                                android:textColor="@color/text_blue_link"
+                                android:textSize="@dimen/text_title_l"
+                                android:textStyle="italic" />
+
+                            <RadioButton
+                                android:id="@+id/rb_gender_male"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/padding_xxl" />
+
+                            <TextView
+                                android:id="@+id/tv_gender_male"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:paddingLeft="@dimen/padding_profile"
+                                android:text="@string/new_account_male"
+                                android:textColor="@color/text_blue_link"
+                                android:textSize="@dimen/text_title_l"
+                                android:textStyle="italic" />
+                        </RadioGroup>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/padding_line"
+                    android:background="@drawable/lineline"
+                    android:paddingBottom="@dimen/padding_profile"
+                    android:paddingTop="@dimen/padding_profile"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="12"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8.3"
+                        android:text="@string/my_account_text_photo_resolution"
+                        android:textColor="@color/text_hint"
+                        android:textSize="@dimen/text_title_l"
+                        android:textStyle="bold|italic" />
+
+                    <TextView
+                        android:id="@+id/tv_photo_resolution"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3.7"
+                        android:text="@string/my_account_photo_resolution"
+                        android:textColor="@color/text_hint"
+                        android:textSize="@dimen/text_title_l"
+                        android:textStyle="italic" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/padding_body"
+                    android:weightSum="12" 
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8.3"
+                        android:text="@string/my_account_text_video_resolution"
+                        android:textColor="@color/text_hint"
+                        android:textSize="@dimen/text_title_l"
+                        android:textStyle="bold|italic" />
+
+                    <TextView
+                        android:id="@+id/tv_video_resolution"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3.7"
+                        android:text="@string/my_account_video_resolution"
+                        android:textColor="@color/text_hint"
+                        android:textSize="@dimen/text_title_l"
+                        android:textStyle="italic" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/padding_line"
+                    android:background="@drawable/lineline"
+                    android:paddingBottom="@dimen/padding_profile"
+                    android:paddingTop="@dimen/padding_profile" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="@dimen/padding_body" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="@dimen/padding_body"
+                        android:visibility="visible"
+                        android:weightSum="12" >
+
+                        <TextView
+                            android:id="@+id/tv_linked_profile"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="8.3"
+                            android:text="@string/new_account_text_linked_profiles"
+                            android:textSize="@dimen/text_title_m"
+                            android:textStyle="bold|italic" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3.7"
+                            android:orientation="horizontal" >
+
+                            <LinearLayout
+                                android:id="@+id/ll_linked_profile"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal" >
+
+                                <ImageButton
+                                    android:id="@+id/ib_phone_contacts"
+                                    android:layout_width="@dimen/icon_profile_l"
+                                    android:layout_height="@dimen/icon_profile_l"
+                                    android:background="@drawable/phone" />
+
+                                <TextView
+                                    android:id="@+id/tv_phone_contacts"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:paddingLeft="@dimen/padding_profile"
+                                    android:text="@string/my_account_text_phone_contacts"
+                                    android:textSize="@dimen/text_title_l"
+                                    android:visibility="gone"
+                                    android:textStyle="bold|italic" />
+                            </LinearLayout>
+
+                            <ImageButton
+                                android:id="@+id/ib_add_phone"
+                                android:layout_width="@dimen/icon_profile_m"
+                                android:layout_height="@dimen/icon_profile_m"
+                                android:layout_alignParentRight="true"
+                                android:background="@drawable/gray_add" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_private_infomation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/pink_button"
+                android:text=" Private infomation "
+                android:textSize="@dimen/text_title_xll"
+                android:textStyle="italic" />
+
+            <LinearLayout
+                android:id="@+id/ll_private_infomation"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_profile"
+                android:visibility="visible" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/padding_body"
+                    android:weightSum="12" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8.3"
+                        android:text="@string/my_account_text_birthdate"
+                        android:textSize="@dimen/text_title_l"
+                        android:textStyle="bold|italic" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_birthdate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3.7"
+                        android:orientation="horizontal"
+                        android:paddingLeft="5dp" >
+
+                        <TextView
+                            android:id="@+id/tv_year"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@color/shawdow"
+                            android:text="1900"
+                            android:textSize="@dimen/text_title_l"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" - "
+                            android:textSize="@dimen/text_title_l"
+                            android:textStyle="italic" />
+
+                        <TextView
+                            android:id="@+id/tv_month"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@color/shawdow"
+                            android:text="01"
+                            android:textSize="@dimen/text_title_l"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" - "
+                            android:textSize="@dimen/text_title_l"
+                            android:textStyle="italic" />
+
+                        <TextView
+                            android:id="@+id/tv_day"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@color/shawdow"
+                            android:text="01"
+                            android:textSize="@dimen/text_title_l"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/padding_line"
+                    android:background="@drawable/lineline"
+                    android:paddingBottom="@dimen/padding_profile"
+                    android:paddingTop="@dimen/padding_profile" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/padding_body"
+                    android:weightSum="12" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8.3"
+                        android:text="@string/my_account_text_email"
+                        android:textSize="@dimen/text_title_l"
+                        android:textStyle="bold|italic" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_weight="3.7"
+                        android:orientation="horizontal"
+                        android:weightSum="3" >
+
+                        <EditText
+                            android:id="@+id/et_email"
+                            android:layout_width="@dimen/width_edittext"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/border"
+                            android:inputType="textEmailAddress"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:singleLine="true" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_add_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="12" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_weight="3.7"
+                            android:orientation="vertical" >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:weightSum="3" >
+                            </LinearLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3.7"
+                                android:orientation="horizontal" >
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/padding_line"
+                    android:background="@drawable/lineline"
+                    android:paddingBottom="@dimen/padding_profile"
+                    android:paddingTop="@dimen/padding_profile" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/padding_body"
+                    android:weightSum="12" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8.3"
+                        android:text="@string/my_account_text_new_password"
+                        android:textSize="@dimen/text_title_l"
+                        android:textStyle="bold|italic" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3.7"
+                        android:orientation="horizontal" >
+
+                        <EditText
+                            android:id="@+id/et_new_password"
+                            android:layout_width="@dimen/width_edittext"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/border"
+                            android:inputType="textPassword"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:singleLine="true" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/padding_body"
+                    android:weightSum="12" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8.3"
+                        android:text="@string/my_account_text_confirm_password"
+                        android:textSize="@dimen/text_title_l"
+                        android:textStyle="bold|italic" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3.7"
+                        android:orientation="horizontal" >
+
+                        <EditText
+                            android:id="@+id/et_confirm_password"
+                            android:layout_width="@dimen/width_edittext"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:background="@drawable/border"
+                            android:inputType="textPassword"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:singleLine="true" />
+
+                        <ImageButton
+                            android:id="@+id/ib_edit_password"
+                            android:layout_width="@dimen/icon_profile_m"
+                            android:layout_height="@dimen/icon_profile_m"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/pen" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/padding_line"
+                    android:background="@drawable/lineline"
+                    android:paddingBottom="@dimen/padding_profile"
+                    android:paddingTop="@dimen/padding_profile" />
+
+                <LinearLayout
+                    android:id="@+id/ll_terms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="3dp" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <CheckBox
+                            android:id="@+id/cb_terms_new"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/red_check_box"
+                            android:button="@null"
+                            android:paddingTop="5dp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_terms1_new"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="5dp"
+                        android:text="@string/i_have_read_terms"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/text_title_s"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:id="@+id/tv_terms2_new"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:singleLine="false"
+                        android:text="@string/term_conditions"
+                        android:textColor="@color/text_blue_link"
+                        android:textSize="@dimen/text_title_s"
+                        android:textStyle="italic" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
